@@ -38,9 +38,9 @@ Before you begin, make sure you have the following software and tools installed:
 
 To run tests, run the following step
 
-1.Open folder src/test/java/cucumber/runner
-2.Open the runner file you want to test
-3.Right-click in your test and select Run or you can use Ctrl+Shift+F10
+1. Open folder src/test/java/cucumber/runner
+2. Open the runner file you want to test
+3. Right-click in your test and select Run or you can use Ctrl+Shift+F10
 
 ## Demo Run Test
 
