@@ -42,9 +42,9 @@ To run tests, run the following step
 2. Open the runner file you want to test
 3. Right-click in your test and select Run or you can use Ctrl+Shift+F10
 
-## Demo Run Test
+## Evidence Run test
 
-![eviddence] (https://mega.nz/file/hn5yhI6S#dGfKesEiePtQLX3SR9YztT2EDw3hBCp0X7HDxnLlaC0)
+![Screen Record Test](https://mega.nz/file/hn5yhI6S#dGfKesEiePtQLX3SR9YztT2EDw3hBCp0X7HDxnLlaC0)
 
 ## Screenshots
 
