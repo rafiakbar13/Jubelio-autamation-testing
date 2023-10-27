@@ -48,5 +48,5 @@ Insert gif or link to demo
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Automation Test Screenshot](https://res.cloudinary.com/druic0cle/image/upload/v1698393121/q2osrketjiskepprbxix.png)
 
