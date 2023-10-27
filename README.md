@@ -44,7 +44,7 @@ To run tests, run the following step
 
 ## Evidence Run test
 
-![Screen Record Test](https://mega.nz/file/hn5yhI6S#dGfKesEiePtQLX3SR9YztT2EDw3hBCp0X7HDxnLlaC0)
+![Screen Record Test](https://youtu.be/h7G4ojqvV8k)
 
 ## Screenshots
 
