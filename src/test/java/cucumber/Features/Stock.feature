@@ -1,4 +1,4 @@
-Feature: Penyesuaian Persediaan
+Feature: Inventory Adjustment
 
   Background:
     Given the user is logged in and redirected to the dashboard page

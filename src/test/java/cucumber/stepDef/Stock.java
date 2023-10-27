@@ -6,14 +6,14 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class Stock {
@@ -65,22 +65,20 @@ public class Stock {
 
     @And("user double click on the input field")
     public void userDoubleClickOnTheInputField() {
-        Actions actions = new Actions(this.driver);
-        WebElement container =  this.driver.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[2]/div[1]/div/div[2]/div"));
-        actions.doubleClick(container).build().perform();
+        Actions actions = new Actions(driver);
+        WebElement container = this.driver.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[2]/div[1]/div/div[2]/div"));
+        actions.moveToElement(container).doubleClick(container).build().perform();
         WebElement inputElement = this.driver.findElement(By.xpath("//*[@id=\"page-top\"]/div[6]/div/input"));
+
         inputElement.sendKeys("1");
         inputElement.sendKeys(Keys.RETURN);
     }
 
-//    @And("the user add stock")
-//    public void theUserAddsStock() {
-//
-//
-//    }
     @And("the user click simpan button")
     public void theUserClickSimpanButton() {
-        this.driver.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div/div[2]/div/div/div/div/div[3]/div/button")).click();
+       WebElement saveButton =  this.driver.findElement(By.cssSelector("#page-wrapper > div.wrapper.wrapper-content > div > div > div > div:nth-child(2) > div > div > div > div > div:nth-child(6) > div > button"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", saveButton);
+        saveButton.click();
     }
 
     @Then("the user successfully adds stock")
