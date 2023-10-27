@@ -44,7 +44,7 @@ To run tests, run the following step
 
 ## Evidence Run test
 
-![Screen Record Test](https://youtu.be/h7G4ojqvV8k)
+[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)
 
 ## Screenshots
 
